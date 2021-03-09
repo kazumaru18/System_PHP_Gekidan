@@ -1,4 +1,23 @@
-/* Sample CSS */
-p {
-  color: lime;
+body {
+  margin: 0;
+  padding: 0;
+}
+div#wrapper {
+  width: 760px;
+  margin: 0 auto;
+}
+div#header {
+  height: 80px;
+}
+div#header h1 {
+  margin: 0;
+  padding: 20px;
+}
+
+.logo_ohara {
+  width: 210px;
+}
+
+h1.logo {
+  padding: 0;
 }
