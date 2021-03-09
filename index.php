@@ -20,10 +20,12 @@
                     </div>
                 </div>
                 <div class="header_right">
-                    <ul class="nav navType1 floatLeft">
-                        <li><a href="/tickets/" class="icon icon_tickets">チケット予約</a></li>
-                        <li class="spBlock idLogin"><a href="javascript:void(0);" class="icon icon_login">ログイン</a></li>
-                    </ul>
+                    <div class="icon_table01">
+                        <a href="" class="icon icon_tickets"><img src="images/logo/ticket.png" alt="チケット" class="ticket_logo"></a>
+                    </div>
+                    <div class="icon_table02">
+                        <a href="" class="icon icon_login"><img src="images/logo/ダウンロード.png" alt="ログイン" class="login_logo"></a>
+                    </div>
                 </div>
             </div><!-- /header -->
             <div id="navi">

@@ -13,6 +13,12 @@ div#header h1 {
   margin: 0;
   padding: 20px;
 }
+.headerTable {
+  width: 200px;
+}
+.header_left {
+  margin-right: 300px;
+}
 
 .logo_ohara {
   width: 210px;
@@ -20,4 +26,24 @@ div#header h1 {
 
 h1.logo {
   padding: 0;
+}
+
+.ticket_logo {
+  width: 53px;
+}
+
+.login_logo {
+  width: 53px;
+}
+
+.icon_table01 {
+  float: left;
+}
+
+.icon_table02 {
+  float: left;
+}
+
+.header_right {
+  float: left;
 }
