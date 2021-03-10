@@ -29,17 +29,9 @@
             </div><!-- /main -->
         </div><!-- /content -->
         <div id="footer">
-            <div class="logo">
-                <a href="">
-                    <img src="img/logo.svg" alt="">
-                </a>
-            </div>
-            <ul class="nav">
-                <li><a href="https://www.shiki.jp/">source</a></li>
-            </ul>
-            <p class="copyright">
-                COPYRIGHT © O-hara class 1-11. All rights Reserved.
-            </p>
+            <?php 
+             require_once('footer.php');
+            ?>
         </div><!-- /footer -->
     </div><!-- /wrapper -->
 </body>
