@@ -131,4 +131,11 @@ ul {
 #footer {
   background-color: black;
   color: #fff;
+    text-align: center;
+    width: 100%;
+ position: absolute;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
+}
+#main_revdone {
+  text-align: center;
 }
