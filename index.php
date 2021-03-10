@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html lang="ja">
 
@@ -7,6 +6,7 @@
     <title>大原四季</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/code.js"></script>
 </head>
 
 <body>

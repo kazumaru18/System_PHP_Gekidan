@@ -1,0 +1,10 @@
+.seat-table td {
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 1.1;
+    text-align: center;
+    padding: 20px 1px 2px 1px;
+    border: solid 2px #666666;
+    background: #c6dcf6 url(../images/seat_select/seat_normal.gif) no-repeat center top;
+    cursor: pointer;
+}
