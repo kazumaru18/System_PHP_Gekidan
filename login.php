@@ -15,8 +15,8 @@ if (!(isset($_SESSION['user']))) {
 	unset($_SESSION['user']);
 	//MySQLデータベースに接続する
 	// データベースユーザ
-    $user = 'shop';
-    $password = 'shoppass';
+    $user = 'gekidan';
+    $password = 'gekipass';
     // 利用するデータベース
     $dbName = 'gekidan';
     // MySQLサーバ
@@ -36,12 +36,12 @@ if (!(isset($_SESSION['user']))) {
       exit();
     }
 	//SQL文を作る（プレースホルダを使った式）
-	$sql = "select * from user where login = :login and password = :password";
+	$sql = "select * from user where user_email = :user_email and user_password = :user_password";
 	//プリペアードステートメントを作る
 	$stm = $pdo->prepare($sql);
 	//プリペアードステートメントに値をバインドする
-	$stm->bindValue(':login',$_POST['login'],PDO::PARAM_STR);
-	$stm->bindValue(':password',$_POST['password'],PDO::PARAM_STR);
+	$stm->bindValue(':user_email',$_POST['user_email'],PDO::PARAM_STR);
+	$stm->bindValue(':user_password',$_POST['user_password'],PDO::PARAM_STR);
 	//SQL文を実行する
 	$stm->execute();
 	//結果の取得（連想配列で受け取る）
@@ -56,18 +56,14 @@ if (!(isset($_SESSION['user']))) {
 	}
 ?>
     <form action="mypage.php" method="post">
-        ログイン名<input type="text" name="user_email"><br>
+        メールアドレス<input type="text" name="user_email"><br>
         パスワード<input type="password" name="user_password"><br>
         <input type="submit" value="ログイン">
     </form>
 <?php
 }
 ?>
-    <form action="mypage.php" method="post">
-        ログイン名<input type="text" name=""><br>
-        パスワード<input type="password" name="password"><br>
-        <input type="submit" value="ログイン">
-    </form>
+
 </body>
 
 </html>
