@@ -33,16 +33,22 @@
 <head>
 	<meta charset="UTF-8">
 	<title>ログイン画面</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<?php
-	if (isset($_SESSION['user'])) {
-		echo 'いらっしゃいませ、', $_SESSION['user']['user_name'], 'さん。';
-	} else {
-		echo 'ログイン名またはパスワードが違います。';
-	}
-	?>
+	
+<?php require 'header.php'; ?>
+
+<?php
+if (isset($_SESSION['user'])) {
+	echo 'いらっしゃいませ、', $_SESSION['user']['user_name'], 'さん。';
+} else {
+	echo 'ログイン名またはパスワードが違います。';
+}
+?>
+
+<?php require 'footer.php'; ?>
+
 </body>
 
 </html>

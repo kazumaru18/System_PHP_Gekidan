@@ -9,8 +9,14 @@
 </head>
 
 <body>
-    <p>ログアウトしますか？</p>
-    <a href="logout_output.php">ログアウト</a>
+
+<?php require 'header.php'; ?>
+
+<p>ログアウトしますか？</p>
+<a href="logout_output.php">ログアウト</a>
+
+<?php require 'footer.php'; ?>
+
 </body>
 
 </html>
