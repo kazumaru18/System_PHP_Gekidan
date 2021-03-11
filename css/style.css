@@ -131,11 +131,22 @@ ul {
 #footer {
   background-color: black;
   color: #fff;
-    text-align: center;
-    width: 100%;
+  text-align: center;
+  width: 100%;
  position: absolute;/*←絶対位置*/
     bottom: 0; /*下に固定*/
 }
-#main_revdone {
+.main_revdone{
   text-align: center;
+}
+
+.main_revdone h2{
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.home_button {
+  position: absolute;
+  right: 0;
+  bottom: 10%;
 }
