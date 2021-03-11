@@ -131,4 +131,12 @@ ul {
 #footer {
   background-color: black;
   color: #fff;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+#main_revdone{
+  text-align: center;
 }

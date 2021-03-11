@@ -41,7 +41,9 @@
 
 <?php
 if (isset($_SESSION['user'])) {
-	echo 'いらっしゃいませ、', $_SESSION['user']['user_name'], 'さん。';
+	$url = "http://" . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']);
+	header("Location:" . $url . "/mypage.php" );
+	exit();
 } else {
 	echo 'ログイン名またはパスワードが違います。';
 }
