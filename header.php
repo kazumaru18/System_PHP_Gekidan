@@ -9,4 +9,3 @@
         <li><a href="#"><img src="images/logo/person-check.svg" class="login" alt=""></a></li>
     </ul>
 </nav>
-<section></section>

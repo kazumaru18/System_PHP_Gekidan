@@ -13,9 +13,8 @@
     <div id="wrapper">
         <div id="header">
             <?php 
-            require_once('header.php');
+             require_once('header.php');
             ?>
-            <section></section>
         </div><!-- /header -->
         <div id="navi">
             　
