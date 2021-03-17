@@ -26,6 +26,9 @@
     <div class="button-panel">
       <input type="submit" class="button" title="Sign In" value="Sign In"></input>
     </div>
+    <div class="form-footer">
+      <p><a href="index.php">パスワードを忘れた！？　対戦ありがとうございました。</a></p>
+    </div>
   </form>
 </div>
 
