@@ -46,6 +46,11 @@ if (isset($_SESSION['user'])) {
 	exit();
 } else {
 	echo 'ログイン名またはパスワードが違います。';
+?>
+
+<a href="login_input.php"><button>ログイン画面に戻る</button></a>
+
+<?php
 }
 ?>
 
