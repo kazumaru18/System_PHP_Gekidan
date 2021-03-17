@@ -47,7 +47,7 @@ if (isset($_SESSION['user'])) {
 } else {
 	echo 'ログイン名またはパスワードが違います。';
 ?>
-
+<br>
 <a href="login_input.php"><button>ログイン画面に戻る</button></a>
 
 <?php

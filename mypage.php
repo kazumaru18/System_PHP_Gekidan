@@ -24,14 +24,10 @@ if (!isset($_SESSION['user'])) {
 <?php
     echo 'いらっしゃいませ', $_SESSION['user']['user_name'], 'さん。';
 ?>
-
-<form action="reservation_details.php" method="post">
-    <input type="submit" value="現在予約済みの公演を確認する">
-</form>
-
-<form action="logout.php" method="post">
-    <input type="submit" value="ログアウト">
-</form>
+<br>
+<a href="reservation_check.php"><button>現在予約済みの公演を確認する</button></a>
+<br>
+<a href="logout.php"><button>ログアウト</button></a>
 
 <?php require 'footer.php'; ?>
 

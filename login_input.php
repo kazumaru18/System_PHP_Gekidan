@@ -132,8 +132,6 @@ form {
 }
 </style>
 
-<?php require 'footer.php'; ?>
-
 </body>
 
 </html>

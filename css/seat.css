@@ -1,0 +1,84 @@
+.seat-table td {
+    font-weight: normal;
+    line-height: 1.1;
+    text-align: center;
+    padding: 20px 1px 2px 1px;
+    border: solid 2px #666666;
+    background: #c6dcf6 url(../images/seat_select/seat_normal.gif) no-repeat center top;
+    cursor: pointer;
+}
+
+.seatNumInput {
+    display: none;
+}
+
+.normal-header {
+    padding-left: 250px;
+}
+
+#seat-select-screen {
+    line-height: 0;
+    text-align: center;
+    width: 470px;
+    height: 20px;
+    margin: 0 0 10px 257px;
+    padding-top: 7px;
+    background-color: #e7e7e7;
+    border: solid 2px #666666;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#seat-select-table {
+    margin-left: 185px;
+}
+
+#main {
+    height: 200px;
+    text-align: center;
+}
+#footer {
+    width: 100%;
+    background-color: #89c7de;
+    color: #fff;
+    text-align: center;
+    position: absolute;/*←絶対位置*/
+    bottom: 0;
+}
+
+
+.seat-table td {
+    font-weight: normal;
+    line-height: 1.1;
+    text-align: center;
+    padding: 20px 1px 2px 1px;
+    border: solid 2px #666666;
+}
+ 
+.seat-table input {
+    font-weight: normal;
+    line-height: 1.1;
+    text-align: center;
+    padding: 20px 1px 2px 1px;
+    border: solid 2px #666666;
+}
+ 
+td input[type="checkbox"] + label {
+    display: block;
+    background: url(../images/seat_select/seat_normal.gif) no-repeat center top;
+   
+}
+ 
+td input[type="checkbox"]:checked + label {
+    background: url(../images/seat_select/seat_checked.gif) no-repeat center top;
+}
+
+
+
+
+
+
+
+
+
+ 
