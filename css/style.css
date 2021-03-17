@@ -132,3 +132,85 @@ ul {
   background-color: black;
   color: #fff;
 }
+
+.main_revdone{
+  text-align: center;
+}
+
+.main_revdone h2{
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.home_button {
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: orangered;
+  border: solid 2px orangered;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+.home_button:hover {
+  background: orangered;
+  color: white;
+}
+
+.payment_table {
+  border-collapse: collapse;
+}
+
+
+
+.payment_table th, .payment_table td {
+  border: solid 1px black;
+  /*実線 1px 黒*/
+}
+.payment_button{
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: white;
+  border: solid 2px blue;
+  background-color: blue;
+  border-radius: 3px;
+  transition: .4s;
+  }
+.payment_button:hover{
+  background: skyblue;
+  border-color: skyblue;
+  color: white;
+}
+
+.payment_table{
+  margin: 0 auto;
+}
+
+.payment_table th{
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.main_revdone h2{
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.clear-both {
+  font-size: small;
+}
+
+.p-10{
+  font-size: small;
+}
+
+.finish_img {
+  width: 150px;
+  height: 175px;
+}

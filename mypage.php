@@ -29,7 +29,6 @@ if (!isset($_SESSION['user'])) {
 <br>
 <a href="logout.php"><button>ログアウト</button></a>
 
-<?php require 'footer.php'; ?>
 
 </body>
 

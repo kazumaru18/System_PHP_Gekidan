@@ -1,7 +1,7 @@
 <?php
   $start_date    = 18;  //何日からのレコードか（日）
-  $end_date      = 31;  //何日までのレコードか（日）
-  $date_interval = 1 ;  //何日おきに生成するか（日）
+  $end_date      = 30;  //何日までのレコードか（日）
+  $date_interval = 2 ;  //何日おきに生成するか（日）
 
   $start_hour    = 10;  //何時からのレコードか（時）
   $end_hour      = 16;  //何時までのレコードか（時）
@@ -19,16 +19,17 @@
       $time = $h . ':00';
       $types = ['ライオンキング', 'CATS', 'アラジン', 'オペラ座の怪人'];
       foreach ($types as $type ) {
-        // echo $date.' '.$time.$type . '<br>';
+        echo $date.' '.$time.$type . '<br>';
+
         for ($i=1; $i <= 4; $i++) { 
           require 'db_connect.php';
           //SQL文を作る（プレースホルダを使った式）
-          $sql = "INSERT INTO `musical` (`musical_id`, `date`, `time`, `musical_name`, `musical_seat`, `musical_price` , `vacant`) VALUES (NULL, :date, :time, :type, :seat_num, '2000', '1');";
+          $sql = "INSERT INTO `musical` (`musical_id`, `date`, `time`, `musical_name`, `musical_seat`) VALUES (NULL, :datee, :timee, :typee, :seat_num);";
           //プリペアードステートメントを作る
           $stm = $pdo->prepare($sql);
-          $stm->bindValue(':date'      , $date        , PDO::PARAM_STR);
-          $stm->bindValue(':time'      , $time        , PDO::PARAM_STR);
-          $stm->bindValue(':type'      , $type        , PDO::PARAM_STR);
+          $stm->bindValue(':datee'      , $date        , PDO::PARAM_STR);
+          $stm->bindValue(':timee'      , $time        , PDO::PARAM_STR);
+          $stm->bindValue(':typee'      , $type        , PDO::PARAM_STR);
           $stm->bindValue(':seat_num'      , $i        , PDO::PARAM_STR);
           //SQL文を実行する
           $stm->execute();
